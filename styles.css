@@ -1,0 +1,15 @@
+/* Ocultar marca de agua por defecto en canvas si fuera necesario */
+spline-viewer::part(logo) {
+  display: none !important;
+}
+
+/* Transiciones suaves para elementos interactivos */
+button {
+  will-change: transform;
+}
+
+/* Renderizado limpio de tipografías */
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}

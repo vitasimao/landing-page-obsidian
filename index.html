@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obsidian Wireless | Cyber Flash Sale 24H</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- GSAP y ScrollTrigger para animaciones -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Web Component de Google 3D -->
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"
+    ></script>
+
+    <!-- Estilos Custom -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="bg-[#DDDDDD] text-zinc-900 font-sans antialiased overflow-x-hidden selection:bg-zinc-800 selection:text-white"
+  >
+    <!-- ============================================ -->
+    <!-- 1. TOP BANNER                                -->
+    <!-- ============================================ -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-zinc-950 text-zinc-100 font-mono border-b border-zinc-800 shadow-lg h-12 sm:h-10 px-4 flex justify-between sm:justify-center items-center gap-3 text-center">
+  
+  <!-- Texto promocional (con truncate para evitar que rompa el contenedor en móviles muy chicos) -->
+  <span class="uppercase text-[10px] sm:text-xs font-bold tracking-tight sm:tracking-widest text-zinc-200 truncate">
+    CYBER FLASH SALE: 50% OFF + ESTUCHE
+  </span>
+
+  <!-- Temporizador en cápsula -->
+  <div id="countdown" class="text-[10px] sm:text-xs font-bold bg-zinc-800 text-zinc-100 px-2 py-0.5 rounded border border-zinc-700 shrink-0">
+    22:38:53
+  </div>
+      <nav
+        class="fixed top-[37px] left-0 w-full z-40 bg-[#DDDDDD]/80 backdrop-blur-md border-b border-zinc-300/50 py-4 px-8 flex justify-between items-center"
+      >
+        <span
+          class="text-xl font-black tracking-tighter uppercase text-zinc-900"
+          >OBSIDIAN</span
+        >
+      </nav>
+    </header>
+    <!-- ============================================ -->
+    <!-- 2. HERO SECTION PRINCIPAL ESTILO ESITORIAL   -->
+    <!-- ============================================ -->
+    <section
+      class="relative min-h-screen pt-24 pb-12 flex items-center justify-center px-6 md:px-16 overflow-hidden"
+    >
+      <div
+        class="relative z-10 max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+      >
+        <!-- Columna Izquierda: Copys de Marca -->
+        <div class="space-y-6">
+          <span
+            class="inline-block text-xs uppercase tracking-widest text-zinc-800 font-bold px-3.5 py-1.5 bg-zinc-300/80 rounded-full border border-zinc-400/50"
+          >
+            EDICIÓN LIMITADA • LOTE 300 UNIDADES
+          </span>
+
+          <h2
+            class="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-none text-zinc-900"
+          >
+            Sonido Absoluto.<br />
+            <span class="text-zinc-500">Cero Distracciones.</span>
+          </h2>
+
+          <p
+            class="text-zinc-700 text-lg md:text-xl max-w-lg leading-relaxed font-normal"
+          >
+            Una pieza de alta ingeniería acústica diseñada para elevar tu
+            experiencia auditiva a un nivel puramente editorial.
+          </p>
+
+          <div class="pt-4 flex items-center gap-6">
+            <a
+              href="#craftsmanship"
+              class="inline-flex items-center gap-2 bg-zinc-900 text-white font-bold px-8 py-4 rounded-xl hover:bg-black transition-all shadow-xl active:scale-95"
+            scroll-behavior: smooth
+              >
+              <span>Descubrir Obsidian</span>
+            </a>
+            
+          </div>
+        </div>
+
+        <!-- Columna Derecha: GIF Editorial en Tarjeta -->
+        <div
+          class="relative w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border border-zinc-300 bg-zinc-200"
+        >
+          <img
+            src="./assets/auriculares_obsidian.gif"
+            alt="Obsidian Wireless Editorial"
+            class="w-full h-full object-cover contrast-105"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none"
+          ></div>
+          <div
+            class="absolute bottom-6 left-6 text-white text-xs font-semibold tracking-widest uppercase opacity-90"
+          >
+            Obsidian Experience / 2026
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- 3. NARRATIVA EDITORIAL & MATERIALES (Ex 3D)  -->
+    <!-- ============================================ -->
+    <section
+      id="craftsmanship"
+      class="relative py-24 px-6 md:px-16 bg-[#DDDDDD] text-zinc-900 border-t border-zinc-300/60"
+    >
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
+      >
+        <!-- Columna Izquierda: Fotografía Still Life / Macro -->
+        <div
+          class="relative w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-xl border border-zinc-300/80 bg-zinc-300"
+        >
+          <img
+            src="/assets/auriculares_obsidian.jpeg"
+            alt="Artesanía y Materiales Obsidian"
+            class="w-full h-full object-cover"
+          />
+         
+        </div>
+
+        <!-- Columna Derecha: Narrativa Editorial (Sin tarjetas de precio agresivas) -->
+        <div class="space-y-8">
+          <div>
+            <span
+            class="inline-block text-xs uppercase tracking-widest text-zinc-800 font-bold px-3.5 py-1.5 bg-zinc-300/80 rounded-full border border-zinc-400/50"
+          >
+            Ingeniería Acústica & Craftsmanship
+          </span>
+            <h3
+              class="text-4xl md:text-5xl font-black tracking-tight mt-2 text-zinc-900 leading-tight"
+            >
+              Artesanía en cada textura.
+            </h3>
+          </div>
+
+          <p class="text-zinc-700 text-lg leading-relaxed">
+            Construidos con piel sintética transpirable de alta densidad,
+            aluminio de grado aeroespacial y un acabado ultra mate resistente a
+            huellas. La cancelación activa de ruido de 45dB aísla el entorno
+            para sumergirte en una atmósfera sonora pura.
+          </p>
+
+          <div class="grid grid-cols-2 gap-6 pt-2 border-t border-zinc-300">
+            <div>
+              <h4
+                class="text-xs font-bold uppercase tracking-wider text-zinc-500 mb-1"
+              >
+                Estructura
+              </h4>
+              <p class="text-sm font-semibold text-zinc-900">
+                Aluminio Anodizado
+              </p>
+            </div>
+            <div>
+              <h4
+                class="text-xs font-bold uppercase tracking-wider text-zinc-500 mb-1"
+              >
+                Almohadillas
+              </h4>
+              <p class="text-sm font-semibold text-zinc-900">
+                Memory Foam Ergonómico
+              </p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================ -->
+<!-- 4. LOOKBOOK / DETAILS (LAYOUT ASIMÉTRICO)    -->
+<!-- ============================================ -->
+<section id="lookbook" class="py-24 px-6 md:px-16 bg-[#DDDDDD] border-t border-zinc-300/60">
+  <div class="max-w-7xl mx-auto space-y-10">
+    
+    <!-- Encabezado Editorial -->
+    <div class="flex justify-between items-end border-b border-zinc-400/60 pb-4">
+      <div>
+        <span
+            class="inline-block text-xs uppercase tracking-widest text-zinc-800 font-bold px-3.5 py-1.5 bg-zinc-300/80 rounded-full border border-zinc-400/50"
+          >
+            EXHIBICIÓN VISUAL
+          </span>
+        <h3 class="text-3xl md:text-4xl font-black uppercase tracking-tight text-zinc-900 mt-2">Detalles & Geometría</h3>
+      </div>
+      <span class="text-xs font-mono font-semibold tracking-widest text-zinc-500 uppercase">Colección Limitada 2026</span>
+    </div>
+
+    <!-- Grid Asimétrico: 60% Modelo / 40% Apilado -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+      
+      <!-- Columna Izquierda (60% ~ 7 cols): Foto de Modelo Hero -->
+      <div class="lg:col-span-7 relative group rounded-3xl overflow-hidden bg-zinc-300 min-h-[500px] lg:min-h-[680px] shadow-lg border border-zinc-300/80">
+        <img 
+          src="/assets/auriculares_obsidian_modelo.jpeg" 
+          alt="Modelo Obsidian Wireless" 
+          class="w-full h-full object-cover object-[39%_80%] group-hover:scale-105 transition-transform duration-700 ease-out" 
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none"></div>
+        <div class="absolute bottom-6 left-6 text-white space-y-1">
+          <p class="text-xs text-zinc-300 font-medium pt-1">Diseño anatómico de alta fidelidad sonora.</p>
+        </div>
+      </div>
+
+      <!-- Columna Derecha (40% ~ 5 cols): Dos fotos apiladas verticalmente -->
+      <div class="lg:col-span-5 grid grid-cols-1 gap-6">
+        
+        <!-- Tarjeta Superior: Audífonos Still Life -->
+        <div class="relative group rounded-3xl overflow-hidden bg-zinc-300 h-[328px] shadow-md border border-zinc-300/80">
+          <img 
+            src="/assets/auriculares_obsidian.jpeg" 
+            alt="Audífonos Obsidian Still Life" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+          />
+          <div class="absolute bottom-4 left-4">
+          </div>
+        </div>
+
+        <!-- Tarjeta Inferior: Estuche de Protección -->
+        <div class="relative group rounded-3xl overflow-hidden bg-zinc-300 h-[328px] shadow-md border border-zinc-300/80">
+          <img 
+            src="/assets/case_obsidian.jpeg" 
+            alt="Estuche Obsidian" 
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+          />
+          <div class="absolute bottom-4 left-4">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+    <!-- ============================================ -->
+    <!-- 5. FEATURE GRID (Especificaciones Clave)     -->
+    <!-- ============================================ -->
+<section class="py-24 px-6 md:px-16 bg-zinc-950 text-white border-t border-zinc-800">
+  <div class="max-w-7xl mx-auto space-y-16">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 border-b border-zinc-800 pb-8">
+      <div>
+        <span class="text-xs font-bold tracking-[0.3em] text-zinc-400 uppercase">Especificaciones Técnicas</span>
+        <h3 class="text-4xl md:text-5xl font-black uppercase tracking-tight mt-2">Ingeniería de Precisión</h3>
+      </div>
+      <p class="text-zinc-400 text-sm max-w-md">Diseñados para ofrecer un aislamiento acústico superior sin comprometer la estética minimalista.</p>
+    </div>
+
+    <!-- Métrica Impactante -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 divide-y md:divide-y-0 md:divide-x divide-zinc-800">
+      <div class="pt-6 md:pt-0 md:px-6 space-y-2">
+        <span class="text-6xl font-black tracking-tighter text-white">45 dB</span>
+        <h4 class="text-sm font-bold uppercase tracking-wider text-zinc-300">ANC Híbrido Avanzado</h4>
+        <p class="text-xs text-zinc-500 leading-relaxed">Cancelación activa de ruido en tres modos ajustables para cualquier entorno.</p>
+      </div>
+
+      <div class="pt-6 md:pt-0 md:px-6 space-y-2">
+        <span class="text-6xl font-black tracking-tighter text-white">40 HRS</span>
+        <h4 class="text-sm font-bold uppercase tracking-wider text-zinc-300">Autonomía Total</h4>
+        <p class="text-xs text-zinc-500 leading-relaxed">10 minutos de carga rápida vía USB-C otorgan hasta 5 horas de reproducción.</p>
+      </div>
+
+      <div class="pt-6 md:pt-0 md:px-6 space-y-2">
+        <span class="text-6xl font-black tracking-tighter text-white">HI-RES</span>
+        <h4 class="text-sm font-bold uppercase tracking-wider text-zinc-300">Audio Lossless por IA</h4>
+        <p class="text-xs text-zinc-500 leading-relaxed">Controladores de 40mm ajustados a mano para una respuesta plana de estudio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+   
+<!-- ============================================ -->
+<!-- 6. PRENSA & TESTIMONIOS (EDITORIAL QUOTE)   -->
+<!-- ============================================ -->
+<section class="py-28 px-6 md:px-16 bg-zinc-800 text-white border-t border-zinc-800 relative overflow-hidden">
+  
+  <!-- Sutil brillo de fondo estilo estudio -->
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-zinc-800/20 blur-[120px] pointer-events-none rounded-full"></div>
+
+  <div class="max-w-6xl mx-auto relative z-10 space-y-16">
+    
+    <!-- Encabezado sutil -->
+    <div class="flex justify-between items-center border-b border-zinc-800 pb-6">
+      <span class="text-xs font-bold tracking-[0.3em] text-zinc-100 uppercase">Lo que dicen los creativos</span>
+        <div class="flex items-center gap-1 text-zinc-100 mb-2">
+              ★★★★★ <span class="font-bold text-sm ml-2">4.9 / 5.0</span>
+            </div>
+      </div>
+    </div>
+
+    <!-- Cita Tipográfica Gigante estilo Revista -->
+    <div class="text-center space-y-8 max-w-5xl mx-auto py-6">
+      <span class="text-7xl md:text-9xl font-serif text-zinc-100 leading-none select-none block -mb-10 md:-mb-16">“</span>
+      
+      <blockquote class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.15] text-zinc-100 uppercase font-sans">
+        La pieza de audio más elegante y precisa del año.
+      </blockquote>
+      
+      <div class="pt-4 flex flex-col items-center justify-center gap-2">
+        <cite class="not-italic text-sm md:text-base font-bold tracking-[0.25em] text-zinc-400 uppercase">
+          — WIRED MAGAZINE
+        </cite>
+        <span class="text-[10px] font-mono uppercase tracking-widest text-zinc-600">Edición Audio & Diseño 2026</span>
+      </div>
+    </div>
+
+    <!-- Tira de Citas Secundarias / Medios -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 border-t border-zinc-900 text-left">
+      
+      <div class="space-y-3">
+        <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed italic">
+          "El acabado ultra mate y el aislamiento pasivo redefinen lo que esperamos de un audífono de lujo."
+        </p>
+        <div class="text-xs font-bold text-zinc-200 tracking-wider uppercase">— GQ EDITORIAL</div>
+      </div>
+
+      <div class="space-y-3">
+        <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed italic">
+          "Una experiencia sonora plana, neutra y cristalina. Sin artificios ni ecualizaciones agresivas."
+        </p>
+        <div class="text-xs font-bold text-zinc-200 tracking-wider uppercase">— ARCHITECTURAL DIGEST</div>
+      </div>
+
+      <div class="space-y-3">
+        <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed italic">
+          "Obsidian logra equilibrar la alta fidelidad de estudio con una estética minimalista impecable."
+        </p>
+        <div class="text-xs font-bold text-zinc-200 tracking-wider uppercase">— HYPEBEAST</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+    
+
+<!-- ============================================ -->
+<!-- 7. PREGUNTAS FRECUENTES (LAYOUT EDITORIAL)   -->
+<!-- ============================================ -->
+<section class="py-24 px-6 md:px-16 bg-[#DDDDDD] border-t border-zinc-400/60">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+    
+    <!-- Columna Izquierda: Encabezado & Soporte (Sticky) -->
+    <div class="lg:col-span-4 space-y-6 lg:sticky lg:top-28">
+      <div>
+        <span class="text-xs font-bold tracking-[0.25em] text-zinc-700 uppercase">Soporte & Asistencia</span>
+        <h3 class="text-3xl md:text-4xl font-black uppercase tracking-tight text-zinc-900 mt-1">Preguntas Frecuentes</h3>
+      </div>
+      
+      <p class="text-sm text-zinc-600 leading-relaxed">
+        Todo lo que necesitas saber sobre la garantía, compatibilidad y el envío de tu edición limitada.
+      </p>
+
+      <div class="pt-4 border-t border-zinc-400/60">
+        <span class="text-xs font-mono text-zinc-500 uppercase tracking-widest block mb-1">¿Dudas adicionales?</span>
+        <a href="mailto:soporte@obsidian.com" class="text-xs font-bold uppercase tracking-wider text-zinc-900 hover:text-zinc-700 transition-colors flex items-center gap-2">
+          Hablar con un especialista →
+        </a>
+      </div>
+    </div>
+
+    <!-- Columna Derecha: Acordeón Minimalista (Líneas Divisoras) -->
+    <div class="lg:col-span-8 divide-y divide-zinc-400/70 border-y border-zinc-400/70">
+      
+      <!-- Pregunta 1 -->
+      <details class="group py-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+        <summary class="flex justify-between items-center text-left text-base sm:text-lg font-bold text-zinc-900 uppercase tracking-tight select-none group-open:text-zinc-700 transition-colors">
+          <span>¿Es compatible con dispositivos iOS y Android?</span>
+          <span class="ml-4 font-mono text-xl transition-transform duration-300 group-open:rotate-45 text-zinc-700 group-open:text-zinc-700">+</span>
+        </summary>
+        <div class="mt-4 text-sm text-zinc-600 leading-relaxed pr-8 max-w-2xl">
+          Sí. Cuenta con tecnología Bluetooth 5.3 de latencia ultra baja compatible universalmente con iOS, Android, macOS, Windows y cualquier dispositivo con conectividad de audio Bluetooth.
+        </div>
+      </details>
+
+      <!-- Pregunta 2 -->
+      <details class="group py-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+        <summary class="flex justify-between items-center text-left text-base sm:text-lg font-bold text-zinc-900 uppercase tracking-tight select-none group-open:text-zinc-700 transition-colors">
+          <span>¿Cómo funciona la garantía de prueba de 30 días?</span>
+          <span class="ml-4 font-mono text-xl transition-transform duration-300 group-open:rotate-45 text-zinc-700 group-open:text-zinc-700">+</span>
+        </summary>
+        <div class="mt-4 text-sm text-zinc-600 leading-relaxed pr-8 max-w-2xl">
+          Puedes probar los Obsidian Wireless en tu entorno diario durante 30 días. Si la fidelidad acústica o la ergonomía no superan tus expectativas, gestionamos la devolución sin costo ni preguntas.
+        </div>
+      </details>
+
+      <!-- Pregunta 3 -->
+      <details class="group py-6 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
+        <summary class="flex justify-between items-center text-left text-base sm:text-lg font-bold text-zinc-900 uppercase tracking-tight select-none group-open:text-zinc-700 transition-colors">
+          <span>¿Qué incluye la caja al comprar en Cyber Flash Sale?</span>
+          <span class="ml-4 font-mono text-xl transition-transform duration-300 group-open:rotate-45 text-zinc-700 group-open:text-zinc-700">+</span>
+        </summary>
+        <div class="mt-4 text-sm text-zinc-600 leading-relaxed pr-8 max-w-2xl">
+          Incluye los auriculares Obsidian Wireless, el estuche rígido de protección texturizado gratis, cable de carga USB-C de hilo trenzado, cable de audio 3.5mm chapado en oro y certificado de autenticidad de lote.
+        </div>
+      </details>
+
+    </div>
+
+  </div>
+</section>
+    <!-- ============================================ -->
+    <!-- BARRA DE COMPRA FLOTANTE (STICKY BUY BAR)   -->
+    <!-- ============================================ -->
+    <div
+      class="fixed bottom-0 left-0 w-full z-40 bg-zinc-900/90 backdrop-blur-md border-t border-zinc-800 text-white py-3 px-6 shadow-2xl"
+    >
+      <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <span
+            class="hidden sm:inline font-black uppercase text-sm tracking-tight"
+            >OBSIDIAN WIRELESS + ESTUCHE GRATIS</span
+          >
+          <div class="flex items-center gap-2">
+            <span class="text-xl font-black text-white"
+              >$149
+              <span class="text-xs font-normal text-zinc-400">USD</span></span
+            >
+            <span class="text-zinc-500 line-through text-xs sm:text-sm"
+              >$299 USD</span
+            >
+            <span
+              class="bg-red-500/20 text-red-400 text-[10px] font-bold px-2 py-0.5 rounded border border-red-500/30"
+              >50% OFF</span
+            >
+          </div>
+        </div>
+        <button
+          class="bg-white text-zinc-900 font-bold text-xs sm:text-sm px-6 py-2.5 rounded-xl hover:bg-zinc-200 transition-all shadow-lg active:scale-95"
+        >
+          Comprar Ahora
+        </button>
+      </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- 8. FOOTER COMPLETO                           -->
+    <!-- ============================================ -->
+<footer class="bg-zinc-950 text-white pt-20 pb-28 px-6 md:px-16 border-t border-zinc-900">
+  <div class="max-w-7xl mx-auto space-y-16">
+    
+    <!-- Fila Superior: Marca + Navegación -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-zinc-800/80">
+      
+      <!-- Columna 1: Identidad & Manifiesto (5 cols) -->
+      <div class="md:col-span-5 space-y-4">
+        <span class="text-2xl font-black tracking-tighter uppercase block text-white">OBSIDIAN</span>
+        <p class="text-xs text-zinc-400 leading-relaxed max-w-sm">
+          Ingeniería acústica avanzada y diseño industrial minimalista. Elevando los estándares del audio personal sin concesiones.
+        </p>
+      </div>
+
+      <!-- Columna 2: Enlaces Rápidos (3 cols) -->
+      <div class="md:col-span-3 space-y-3">
+        <span class="text-[10px] font-mono font-bold tracking-[0.2em] text-zinc-500 uppercase block">Navegación</span>
+        <ul class="space-y-2 text-xs font-medium text-zinc-300">
+          <li><a href="#craftsmanship" class="hover:text-white transition-colors">Especificaciones</a></li>
+          <li><a href="#lookbook" class="hover:text-white transition-colors">Campaña Visual</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Garantía & Envíos</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Política de Privacidad</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Presencia / Redes (4 cols) -->
+      <div class="md:col-span-4 space-y-3">
+        <span class="text-[10px] font-mono font-bold tracking-[0.2em] text-zinc-500 uppercase block">Canales Directos</span>
+        <div class="flex gap-6 text-xs text-zinc-300 font-medium">
+          <a href="#" class="hover:text-white transition-colors">Instagram</a>
+          <a href="#" class="hover:text-white transition-colors">YouTube</a>
+          <a href="#" class="hover:text-white transition-colors">Spotify</a>
+          <a href="#" class="hover:text-white transition-colors">Press Kit</a>
+        </div>
+        <p class="text-[11px] text-zinc-500 pt-2">Atención prioritaria: <span class="text-zinc-300">concierge@obsidian.audio</span></p>
+      </div>
+
+    </div>
+
+    <!-- Fila Inferior: Pagos Seguros Elegantes & Legales -->
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 text-[11px] text-zinc-500 font-mono uppercase tracking-wider">
+      
+      <!-- Derechos de autor -->
+      <div>
+        © 2026 OBSIDIAN AUDIO LTD. TODOS LOS DERECHOS RESERVADOS.
+      </div>
+
+      <!-- Métodos de Pago Sobrios (Tipografía Limpia en lugar de cajas) -->
+      <div class="flex items-center gap-4 text-zinc-400">
+        <span class="text-[10px] text-zinc-600">PAGO SEGURO //</span>
+        <span class="text-xs font-bold tracking-tight text-zinc-300">VISA</span>
+        <span>•</span>
+        <span class="text-xs font-bold tracking-tight text-zinc-300">MASTERCARD</span>
+        <span>•</span>
+        <span class="text-xs font-bold tracking-tight text-zinc-300">APPLE PAY</span>
+        <span>•</span>
+        <span class="text-xs font-bold tracking-tight text-zinc-300">AMEX</span>
+      </div>
+
+    </div>
+
+  </div>
+</footer>    
+
+    <!-- JavaScript Principal -->
+    <script src="main.js"></script>
+  </body>
+</html>
