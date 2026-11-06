@@ -65,3 +65,8 @@ A high-end landing page designed for a limited edition of wireless headphones. C
 ### 👩‍💻 Author
 Designed and developed by **Vita Simao** — *Web Designer & Digital Strategist*.  
 Specializing in high-performance websites and conversion-centered user experiences.
+
+<div align="center">
+  <p>Developed with precision by <strong>Vita Simao</strong></p>
+  <p><a href="https://linkedin.com/in/vitasimao">LinkedIn</a> • <a href="https://vitasimao.com">Website</a></p>
+</div>
